@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin-panel', function () {
+    return view('admin.layouts.master');
+})->name('admin');
